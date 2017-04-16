@@ -34,13 +34,13 @@ This program uses python3 (might work with python2 not tested). Use of [virtuale
 
 To encrypt an annotation:
 
-    $ python -p mysuperpassword '{ "@context": "http://www.w3.org/ns/anno.jsonld", "target": "file://./abc.pdf", "body": "Secret annotation" }'
+    $ python main.py -p mysuperpassword '{ "@context": "http://www.w3.org/ns/anno.jsonld", "target": "file://./abc.pdf", "body": "Secret annotation" }'
 
 (encryption is the default operation)
 
 To decrypt the annotation:
   
-    $ python -p mysuperpassword '{ "@context": "http://www.w3.org/ns/anno.jsonld", "target": "file://./abc.pdf", "body": "WkqnguxUU0uUSfc8zI2sx4+fu4+W6SwW2EBtZ73F/TvGDjydaYSrMhiHIyzbnA==" }
+    $ python main.py -d -p mysuperpassword '{ "@context": "http://www.w3.org/ns/anno.jsonld", "target": "file://./abc.pdf", "body": "WkqnguxUU0uUSfc8zI2sx4+fu4+W6SwW2EBtZ73F/TvGDjydaYSrMhiHIyzbnA==" }
 
 # Tests
 
